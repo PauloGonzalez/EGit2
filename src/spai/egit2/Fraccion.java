@@ -71,5 +71,10 @@ public class Fraccion {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	public static Fraccion restar(Fraccion fraccion1, Fraccion fraccion2) {
+		// IssuesTest#5
+		return null;
+	}
 
 }

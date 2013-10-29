@@ -55,5 +55,15 @@ public class FraccionTest {
 		assertTrue(((5 * 2) + (1 * 6)) == resultado.getNumerador()
 				&& ((6 * 2) == resultado.getDenominador()));
 	}
+	
+	// IssuesTest#5
+	@Test
+	public void testRestar(){
+	   Fraccion unaFraccion = new Fraccion (1,3);
+	   Fraccion resultado = Fraccion.restar(this.fraccion, unaFraccion);
+	   assertEquals(1, resultado.getNumerador());
+	   assertEquals(3, resultado.getDenominador());
+		
+	}
 
 }
