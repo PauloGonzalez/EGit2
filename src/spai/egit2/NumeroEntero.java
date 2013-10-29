@@ -22,6 +22,10 @@ public class NumeroEntero {
     public void incrementar() {
         this.setValor(this.valor + 1);
     }
+    
+    public void incrementar(int incremento) {
+        //IssuesTest#3
+    }
 
     public void doblar() {
         this.setValor(this.valor * 2);
