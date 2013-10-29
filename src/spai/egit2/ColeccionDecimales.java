@@ -34,10 +34,12 @@ public class ColeccionDecimales {
         return mayor;
     }
 
-    //Este metodo debe ser implementado 
 	public double multiplicar() {
-		// TODO Auto-generated method stub
-		return -1;
+		double result = 1;
+		for (double item : this.coleccion) {
+			result *= item;
+		}
+		return result;
 	}
 
 }
