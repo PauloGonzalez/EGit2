@@ -67,4 +67,9 @@ public class Fraccion {
         return (double) numerador / denominador;
     }
 
+	public static Fraccion sumar(Fraccion fraccion1, Fraccion fraccion2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
