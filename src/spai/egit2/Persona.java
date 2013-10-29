@@ -39,4 +39,9 @@ public class Persona {
         return this.nombre.substring(0, 1) + ".";
     }
 
+	public String nombreMayusculas() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
