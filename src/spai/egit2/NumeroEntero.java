@@ -24,7 +24,7 @@ public class NumeroEntero {
     }
     
     public void incrementar(int incremento) {
-        //IssuesTest#3
+        this.setValor(this.valor + incremento);
     }
 
     public void doblar() {
