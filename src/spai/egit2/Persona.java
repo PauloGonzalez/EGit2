@@ -41,7 +41,7 @@ public class Persona {
 
 	public String nombreMayusculas() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.nombre.toUpperCase();
 	}
 
 }
