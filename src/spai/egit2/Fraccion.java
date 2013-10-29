@@ -34,44 +34,49 @@ package spai.egit2;
  * 
  */
 public class Fraccion {
-    private int numerador;
+	private int numerador;
 
-    private int denominador;
+	private int denominador;
 
-    public Fraccion(int numerador, int denominador) {
-        this.numerador = numerador;
-        this.denominador = denominador;
-    }
-
-    public Fraccion() {
-        this(1, 1);
-    }
-
-    public int getNumerador() {
-        return numerador;
-    }
-
-    public void setNumerador(int numerador) {
-        this.numerador = numerador;
-    }
-
-    public int getDenominador() {
-        return denominador;
-    }
-
-    public void setDenominador(int denominador) {
-        this.denominador = denominador;
-    }
-
-    public double decimal() {
-        return (double) numerador / denominador;
-    }
-
-	public static Fraccion sumar(Fraccion fraccion1, Fraccion fraccion2) {
-		// TODO Auto-generated method stub
-		return null;
+	public Fraccion(int numerador, int denominador) {
+		this.numerador = numerador;
+		this.denominador = denominador;
 	}
+
+	public Fraccion() {
+		this(1, 1);
+	}
+
+	public int getNumerador() {
+		return numerador;
+	}
+
+	public void setNumerador(int numerador) {
+		this.numerador = numerador;
+	}
+
+	public int getDenominador() {
+		return denominador;
+	}
+
+	public void setDenominador(int denominador) {
+		this.denominador = denominador;
+	}
+
+	public double decimal() {
+		return (double) numerador / denominador;
+	}
+
 	
+	public static Fraccion sumar(Fraccion fraccion1, Fraccion fraccion2) {
+		// IssuesDev##9
+		Fraccion resultado = new Fraccion();
+		resultado.numerador = (fraccion1.numerador * fraccion2.denominador)
+				+ (fraccion1.denominador * fraccion2.numerador);
+		resultado.denominador = fraccion1.denominador * fraccion2.denominador;
+		return resultado;
+	}
+
 	public static Fraccion restar(Fraccion fraccion1, Fraccion fraccion2) {
 		// IssuesTest#5
 		return null;
