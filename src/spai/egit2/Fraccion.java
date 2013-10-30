@@ -1,6 +1,7 @@
 package spai.egit2;
 
-/**
+/*
+ * 
  * Conceptos: Las fracciones propias son aquellas cuyo numerador es menor que el
  * denominador
  * 
