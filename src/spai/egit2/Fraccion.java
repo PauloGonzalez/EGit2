@@ -67,7 +67,6 @@ public class Fraccion {
 		return (double) numerador / denominador;
 	}
 
-	
 	public static Fraccion sumar(Fraccion fraccion1, Fraccion fraccion2) {
 		// IssuesDev##9
 		Fraccion resultado = new Fraccion();
@@ -79,7 +78,16 @@ public class Fraccion {
 
 	public static Fraccion restar(Fraccion fraccion1, Fraccion fraccion2) {
 		// IssuesTest#5
-		return null;
+		int denominadorComun = 1;
+		if (fraccion1.getDenominador() == fraccion2.getDenominador()) {
+			denominadorComun = fraccion1.getDenominador();
+		}
+
+		Fraccion resultado = new Fraccion();
+		resultado.numerador = ( (fraccion1.numerador * fraccion2.denominador)
+				- (fraccion1.denominador * fraccion2.numerador) )/denominadorComun;
+		resultado.denominador = (fraccion1.denominador * fraccion2.denominador)/denominadorComun;
+		return resultado;
 	}
 
 }
