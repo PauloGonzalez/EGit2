@@ -46,7 +46,6 @@ public class FraccionTest {
 	}
 
 	
-	//Este metodo prueba la funcionalidad del metodo sumar de Fraccion.
 	@Test
 	public void testSumar() {
 		Fraccion fraccion1 = new Fraccion(5, 6);
@@ -56,7 +55,6 @@ public class FraccionTest {
 				&& ((6 * 2) == resultado.getDenominador()));
 	}
 	
-	// IssuesTest#5
 	@Test
 	public void testRestar(){
 	   Fraccion unaFraccion = new Fraccion (1,3);

@@ -26,7 +26,6 @@ public class ColeccionDecimalesTest {
         assertEquals(3.4, this.numeros.mayor(), 1e-10);
     }
     
-    //Se ha creado un test para verificar la funcionalidad el metodo multiplicar.
     @Test
     public void testMultiplicar() {
         assertEquals( (1.2*3.4*1.2), this.numeros.multiplicar(), 1e-10);
